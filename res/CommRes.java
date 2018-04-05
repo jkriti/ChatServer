@@ -5,27 +5,16 @@
  */
 package res;
 
+import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Calendar;
-import serverapp.ServerWin;
 
 /**
  *
  * @author define
  */
 public class CommRes {
-    public static ServerWin serverwin;
-    public static ArrayList<ClientDetails> onlineUsers;
+    public static String id;
+    public static String name;
+    public static Socket client;
     public static ArrayList<Group> groups;
-    
-    public static String getDateTime(Calendar calendar){
-        String datetime="";
-        datetime=calendar.get(Calendar.DATE) + "/" +
-                 calendar.get(Calendar.MONTH) + "/" +
-                 calendar.get(Calendar.YEAR) + " " +
-                 calendar.get(Calendar.HOUR) + ":" +
-                 calendar.get(Calendar.MINUTE);
-        return datetime;
-    }
-    
 }

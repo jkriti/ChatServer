@@ -20,4 +20,5 @@ public class Group implements Serializable{
     public ArrayList<ClientDetails> active;
     public ArrayList<ChatDetails> chat;
     public ArrayList<ClientDetails> requests;
+    
 }
